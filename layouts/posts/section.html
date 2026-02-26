@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        h1, h2, h3 { margin-top: 1.5em; }
+        a { color: #2563eb; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .meta { color: #64748b; font-size: 0.9em; }
+        .post-item { border-bottom: 1px solid #e2e8f0; padding: 1.5rem 0; }
+        .post-item:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+    <h1>{{ .Title }}</h1>
+    <div id="posts">
+        {{ range .Pages }}
+        <article class="post-item">
+            <h3>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            <div class="meta">
+                <time>{{ .Date.Format "2006-01-02" }}</time>
+            </div>
+            {{ if .Summary }}
+            <p>{{ .Summary }}</p>
+            {{ end }}
+        </article>
+        {{ end }}
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+baseURL = "https://jiojio2026.github.io/knowleage-base/"
+title = "个人知识库"
+languageCode = "zh-cn"
+relativeURLs = true
+
+# 简单的主题配置（不使用外部主题）
+paginate = 10
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+# 模块导入（如果以后需要）
+# [module]
+#   [[module.imports]]
+#     path = "github.com/theNewDynamic/gohugo-theme-ananke"
