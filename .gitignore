@@ -2,6 +2,9 @@
 .hugo_build.lock
 resources/_gen/
 
+# 构建产物
+public/
+
 # OS
 .DS_Store
 Thumbs.db

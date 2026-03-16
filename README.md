@@ -74,7 +74,7 @@ knowledge-base/
 ### Hugo 配置（config.toml）
 
 ```toml
-baseURL = "https://jiojio2026.github.io/knowleage-base/"
+baseURL = "https://jiojio2026.github.io/Knowledge/"
 title = "个人知识库"
 languageCode = "zh-cn"
 relativeURLs = true
